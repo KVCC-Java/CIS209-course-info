@@ -193,7 +193,7 @@ Here are a few guideline steps for a process of submitting your solutions:
 3. Commit your solutions.  
 
     ```bash
-    $ git commit
+    $ git commit -m "Your commit message"
     ```
 
    Enter your commit message and then save and exit.  

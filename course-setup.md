@@ -35,9 +35,9 @@ Assuming you have a solid enough understanding of Git, it's time to get started 
 
 1. If you don't already have an account, sign up for one here: [https://github.com/join][join].
 
-2. Next you need to join the GitHub Organization that we've created for the course: [KVCC-CIS229][CIS229]
+2. Next you need to join the GitHub Organization that we've created for the course: [KVCC-CIS229][CIS229] Give the instructor your account name so he can invite you to the organization.
   
-3. If for any reason you can't join the organization, contact the instructor, kchappelow@kvcc.edu and let him know.
+3. You should receive an invitation to join the organization. If for any reason you can't join the organization, contact the instructor, kchappelow@kvcc.edu and let him know.
   
 4. You should now be a part of the KVCC-CIS229 organization and should have access. 
   
@@ -47,103 +47,34 @@ Assuming you have a solid enough understanding of Git, it's time to get started 
 
 You will now need to install Git. See the following page for instructions: [Set Up Git](https://help.github.com/articles/set-up-git/)
 
-1. Once you have Git installed, the first thing you have to do is to clone the current homework repository by issuing the following commands on the command line:
+1. Once you have Git installed, the first thing you have to do is to clone your private homework repository by issuing the following commands on the command line:
 
     ```bash
-    $ git clone https://github.com/KVCC-CIS229/homework.git
+    $ git clone https://github.com/KVCC-CIS229/hw-answers-<NetID>.git
     ```
   
-   This will make a complete replica of the homework repository locally. Now we are going to change it to point to your personal repository taht was created for you in the previous section.
+   This will make a complete replica of the homework repository locally. Now we are going to add a remote that points to the public homework repository where the assignments will be posted.
 
    Change your working path to your newly cloned repository:
 
     ```bash
-    $ cd homework/
+    $ cd hw-answers-<NetID>/
     ```
 
-2. By default the remote called origin is set to the location that you cloned the repository from. You should see teh following:  
-
     ```bash
-    $ git remote -v
-        origin https://github.com/KVCC-CIS229/homework.git (fetch)
-        origin https://github.com/KVCC-CIS229/homework.git (push)
-    ```
-
-   We don't want that remote to be the origin, instead, we want to change it to point to your repository. To do that, issue the following command:  
-
-    ```bash
-    $ git remote rename origin upstream
+    $ git remote add homework https://github.com/KVCC-CIS229/homework.git
     ```
 
    And now you should see the following:  
 
     ```bash
     $ git remote -v
-        upstream https://github.com/KVCC-CIS229/homework.git (fetch)
-        upstream https://github.com/KVCC-CIS229/homework.git (push)
-    ```
-    
-3. Lastly we need to give your repository a new origin since it is lacking one. Issue the following but substituting your GitHub username in place:
-
-    ```bash
-    $ git remote add origin https://github.com/KVCC-CIS229/hw-answers-<NetID>.git
-    ```
-
-   But substitute in your own network ID of course.  
-
-   If you have an error that looks like the following:  
-
-    ```bash
-    Could not rename config section 'remote.[old name]' to 'remote.[new name]'
-    ```
-
-   Or this error:  
-
-    ```bash
-    fatal: remote origin already exists.
-    ```
-
-   This appears to happen to some depending on the version of Git they are using. To fix it, just issue the following command:  
-
-    ```bash
-    $ git remote set-url origin https://github.com/KVCC-CIS229/hw-answers-<NetID>.git
-    ```
-   This solution was found from StackOverflow.  
-
-   For reference, your final git remote -v should look like following when its setup correctly:  
-
-    ```bash
-    $ git remote -v
-        upstream https://github.com/KVCC-CIS229/homework.git (fetch)
-        upstream https://github.com/KVCC-CIS229/homework.git (push)
+        homework https://github.com/KVCC-CIS229/homework.git (fetch)
+        homework https://github.com/KVCC-CIS229/homework.git (push)
         origin https://github.com/KVCC-CIS229/hw-answers-<NetID>.git (fetch)
         origin https://github.com/KVCC-CIS229/hw-answers-<NetID>.git (push)
     ```
     
-   Let's test it out by doing a push of your master branch to GitHub by issuing the following:  
-
-    ```bash
-    $ git push -u origin master
-    ```
-
-   You should see something like the following:  
-
-    ```bash
-    Counting objects: 5, done.
-    Delta compression using up to 4 threads.
-    Compressing objects: 100% (3/3), done.
-    Writing objects: 100% (3/3), 294 bytes | 0 bytes/s, done.
-    Total 3 (delta 2), reused 0 (delta 0)
-    To git@github.com:KVCC-CIS229/hw-answers-joshuad.git   f726472..545a4f0  master -> master
-    ```
-
-   That last command was a bit special and only needs to be ran the first time to setup the remote tracking branches. Now we should be able to just run `git push` without the arguments. Try it and you should get the following:  
-
-    ```bash
-    $ git push
-          Everything up-to-date
-    ```
-
    If you don't know Git that well, this probably seemed very arcane. Just keep using Git and you'll keep understanding more and more.  
 
 ## Getting Newly Released Homework
@@ -156,14 +87,8 @@ Pulling in homeworks that are released or previous homework solutions should be 
 2. Once a homework is released, pulling in the changes should be fairly simple:
 
     ```bash
-    $ git pull upstream master
-    ```
-    
-   **OR** if you wish to be more explicit, you can fetch first and then merge:
-
-    ```bash
-    $ git fetch upstream
-    $ git merge upstream/master
+    $ git fetch homework
+    $ git merge homework/master -m "fetched homework files"
     ```
     
 3. If you've followed the instructions in each homework, you should have no merge conflicts and everything should be peachy.

@@ -1,3 +1,3 @@
-# CIS 229 Advanced Java Programming
-This course covers advanced Java topics with continued emphasis on good, modular and structured and Object Oriented design. Advanced topics will cover recursion, pointers and sets, data and record structures and their uses and implementations. Sorting, searching, both sequential and random file processing are also practiced. 
-Prerequisites: CIS 209.
+# CIS 209 Java Programming
+This course covers programming with the Java language. . 
+Prerequisites: CIS 150, Programming Logic.

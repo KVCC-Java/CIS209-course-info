@@ -42,11 +42,10 @@ The instructor will post a URL in Moodle for each assignment. The first time you
 
 You will then clone the repository to your file system using the link in the green "Clone or download" button.
 
-    ```bash
+    ```
     $ git clone https://github.com/KVCC-Java/cis-209-get-familiar-with-github-username.git
     ```
     
-
 This will create a sandbox or copy of the repository. You can then do your assignment and add any supporting files to the directories.
 
 ## Submitting Your Homework
@@ -61,19 +60,19 @@ Here are a few guideline steps for a process of submitting your solutions:
 
 1. Look at your current repository status.
 
-    ```bash
+    ```
     $ git status
     ```
 
 2. Add your solutions (if they aren't already added and commited).
 
-    ```bash
-    $ git add my-solutions/
+    ```
+    $ git add *
     ```
 
 3. Commit your solutions.  
 
-    ```bash
+    ```
     $ git commit -m "Your commit message"
     ```
 
@@ -81,7 +80,7 @@ Here are a few guideline steps for a process of submitting your solutions:
 
 4. This is the most important part: **push** your solutions to GitHub.  
 
-    ```bash
+    ```
     $ git push
     ```
 
@@ -89,6 +88,12 @@ Here are a few guideline steps for a process of submitting your solutions:
    Just navigate to your repository and check that your latest commits are on GitHub.  
 
 6. Then go and eat some cinnamon rolls; you've finished the homework assignment.
+
+## Having problems and need help with yout program???
+If you are having problems, follow the steps above to submit the current version of your work. Email the instructor explaining what is happening or how you need help and include which assignment you are working on. The instructor can then clone your repository, run the code and can leave feedback using git issues.
+
+## Grading
+When the instructor grades your assignments he will clone your assignment repository and a tag will be created so you know which version of your assignment is being graded. Feedback about the assignment will be done by git issues.
 
 ## Word of Caution
 

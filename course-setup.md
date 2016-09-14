@@ -90,10 +90,10 @@ Here are a few guideline steps for a process of submitting your solutions:
 6. Then go and eat some cinnamon rolls; you've finished the homework assignment.
 
 ## Having problems and need help with yout program???
-If you are having problems, follow the steps above to submit the current version of your work. Email the instructor explaining what is happening or how you need help and include which assignment you are working on. The instructor can then clone your repository, run the code and can leave feedback using git issues.
+If you are having problems, follow the steps above to submit the current version of your work. Email the instructor explaining what is happening or how you need help and include which assignment you are working on. The instructor can then clone your repository, run the code and can leave feedback using GitHub issues.
 
 ## Grading
-When the instructor grades your assignments he will clone your assignment repository and a tag will be created so you know which version of your assignment is being graded. Feedback about the assignment will be done by git issues.
+When the instructor grades your assignments he will clone your assignment repository and a tag will be created so you know which version of your assignment is being graded. Feedback about the assignment will be done by GitHub issues.
 
 ## Word of Caution
 

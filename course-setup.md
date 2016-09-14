@@ -42,9 +42,9 @@ The instructor will post a URL in Moodle for each assignment. The first time you
 
 You will then clone the repository to your file system using the link in the green "Clone or download" button.
 
-    ```
+    
     $ git clone https://github.com/KVCC-Java/cis-209-get-familiar-with-github-username.git
-    ```
+    
     
 This will create a sandbox or copy of the repository. You can then do your assignment and add any supporting files to the directories.
 

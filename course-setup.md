@@ -89,7 +89,7 @@ Here are a few guideline steps for a process of submitting your solutions:
 
 6. Then go and eat some cinnamon rolls; you've finished the homework assignment.
 
-## Having problems and need help with yout program???
+## Having problems and need help with your program???
 If you are having problems, follow the steps above to submit the current version of your work. Email the instructor explaining what is happening or how you need help and include which assignment you are working on. The instructor can then clone your repository, run the code and can leave feedback using GitHub issues.
 
 ## Grading

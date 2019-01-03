@@ -7,7 +7,6 @@ This will guide you through an understanding how we will be using Git & GitHub f
 
 - [Motivation](#motivation)
 - [Learning Git](#learning-git)
-- [Setting up GitHub](#setting-up-github)
 - [Setting up Git](#setting-up-git)
 - [Getting Newly Released Homework](#getting-newly-released-homework)
 - [Submitting Your Homework](#submitting-your-homework)
@@ -42,11 +41,42 @@ The instructor will post a URL in Moodle for each assignment. The first time you
 
 You will then clone the repository to your file system using the link in the green "Clone or download" button.
 
+Once you have copied the link you can use Intellij to clone the repository:
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_clone.png "clone menu")
+
+Intellij will present you with a clone dialog:
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_clone_dialog.png "clone dialog")
+
+If this is the first time you've used git from Intellij, you can click on the login button to log in to git. You can then click on the test button to verify your connection.
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_clone_connection_test.png "clone connection test")
+
+If you are given the following dialog, click on "No".
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_checkout_create_project_dialog.png "create project dialog")
+
+Alternately, you can also manually clone the repository by entering the following command at the command line in the directory you want to place the repository in.
     
     $ git clone https://github.com/KVCC-Java/cis-209-get-familiar-with-github-username.git
-    
-    
+       
 This will create a sandbox or copy of the repository. You can then do your assignment and add any supporting files to the directories.
+
+## Creating a Java project in Intellij
+Next you will want to create a Java project in the directory containing your sandbox. To do this click on the file | new project menu which will present a dialog:
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/new_java_project.png "create java project dialog")
+
+Make sure you select Java on the left, then click "Next". You will then see the following dialog where you can click on "Next" again.
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/java_new_project_dialog_2.png "create java project dialog 2")
+
+The last dialog allows you to select the project location where you can browse to the directory containing your sandbox. The dialog also allows you to name the project.
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/java_new_project_select_directory.png "create java project directory selection")
+
+Click on "Finish" to create your Java project.
 
 ## Submitting Your Homework
 
@@ -56,7 +86,35 @@ The criteria for your homework being submitted on time is that your code must be
 
 Just because your code has been commited on your local machine, that doens't mean that it has been **submitted**; it needs to be on GitHub.
 
-Here are a few guideline steps for a process of submitting your solutions:
+Here are the steps to submit your solution using Intellij:
+
+1. You can right click on one of your modified files to add the file to the sandbox:
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_add.png "add to git")
+
+You will be presented with a dialog to add files and you can also add other files at the same time by selecting the checkbox by the files.
+
+2. Once you have added the files you need to commit them to the sandbox. Right click on the file again to select the "commit" option.
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_commit.png "commit to git")
+
+Intellij will then show you the following dialog where you can add a commit message:
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_commit_dialog.png "git commit dialog")
+
+3. You have now saved your changes to the sandbox but to get them to the github server you need to perform a push operation.
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_push.png "push to git")
+
+You will then see the following dialog:
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_push_dialog.png "git push dialog")
+
+When you click on the "Push" button your changes will be uploaded to the server and you should see a status showing you that the push was successful.
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_push_successful.png "push successful")
+
+You can also do this mannualy by following these steps for a process of submitting your solutions:
 
 1. Look at your current repository status.
 
@@ -84,10 +142,11 @@ Here are a few guideline steps for a process of submitting your solutions:
     $ git push
     ```
 
-5. The last thing that we strongly recommend you do is to go to the your repository on GitHub to make sure that you can see your solutions.  
+## Verify the push worked!
+The last thing that we strongly recommend you do is to go to the your repository on GitHub to make sure that you can see your solutions.  
    Just navigate to your repository and check that your latest commits are on GitHub.  
 
-6. Then go and eat some cinnamon rolls; you've finished the homework assignment.
+Then go and eat some cinnamon rolls; you've finished the homework assignment.
 
 ## Having problems and need help with your program???
 If you are having problems, follow the steps above to submit the current version of your work. Email the instructor explaining what is happening or how you need help and include which assignment you are working on. The instructor can then clone your repository, run the code and can leave feedback using GitHub issues.

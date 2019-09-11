@@ -39,6 +39,12 @@ Git should already be installed on the lab computers but you may want to install
 ## Getting Newly Released Homework
 The instructor will post a URL in Moodle for each assignment. The first time you click on one of the URLs from GitHub Classroom you will be asked to authorize the classroom application, click the green "Authorize application" button. You will then be asked to accept the assignment. Clicking on the accept will add you to the KVCC-Java organization [https://github.com/KVCC-Java][KVCC-Java], create a private repository for the assignment and clone a readme file along with any starter code for the assignment if needed. You will receive emails as the steps are completed.
 
+If gitHub accept is not completing for a long time (like more than an hour or so), try the following:
+
+1. Go to the GitHub web-page, and click on the started import of the assignment in question.
+2. When prompted, choose CANCEL (not restart)
+3. Then go back to the invitation, and restart the accept process.
+
 You will then clone the repository to your file system using the link in the green "Clone or download" button.
 
 Once you have copied the link you can use Intellij to clone the repository:

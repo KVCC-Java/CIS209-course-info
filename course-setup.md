@@ -16,7 +16,7 @@ This will guide you through an understanding how we will be using Git & GitHub f
 ## Motivation
 The motivation for using Git and GitHub has several parts.
 
-The first part is a convenience factor for the instructor. Not surprisingly, Moodle isn't the most friendly for assignments dealing with code. With Git, and GitHub Classroom we can very easily clone all your solution repositories and pull in changes as you add to them.
+The first part is a convenience factor for the instructor. Not surprisingly, Canvas isn't the most friendly for assignments dealing with code. With Git, and GitHub Classroom we can very easily clone all your solution repositories and pull in changes as you add to them.
 
 GitHub acts as a collection point for Git repositories. It makes it easy to collaborate and host code all while using Git either in a GUI or on the command line.
 

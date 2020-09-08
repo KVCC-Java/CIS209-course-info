@@ -37,7 +37,7 @@ If you don't already have an account, sign up for one here: [https://github.com/
 Git should already be installed on the lab computers but you may want to install it on your own systems. See the following page for instructions to install it: [Set Up Git](https://help.github.com/articles/set-up-git/)
 
 ## Getting Newly Released Homework
-The instructor will post a URL in Moodle for each assignment. The first time you click on one of the URLs from GitHub Classroom you will be asked to authorize the classroom application, click the green "Authorize application" button. You will then be asked to accept the assignment. Clicking on the accept will add you to the KVCC-Java organization [https://github.com/KVCC-Java][KVCC-Java], create a private repository for the assignment and clone a readme file along with any starter code for the assignment if needed. You will receive emails as the steps are completed.
+The instructor will post a URL in Canvas for each assignment. The first time you click on one of the URLs from GitHub Classroom you will be asked to authorize the classroom application, click the green "Authorize application" button. You will then be asked to accept the assignment. Clicking on the accept will add you to the KVCC-Java organization [https://github.com/KVCC-Java][KVCC-Java], create a private repository for the assignment and clone a readme file along with any starter code for the assignment if needed. You will receive emails as the steps are completed.
 
 If gitHub accept is not completing for a long time (like more than an hour or so), try the following:
 

@@ -59,10 +59,6 @@ If this is the first time you've used git from Intellij, you can click on the lo
 
 ![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_clone_connection_test.png "clone connection test")
 
-If you are given the following dialog, click on "No".
-
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_checkout_create_project_dialog.png "create project dialog")
-
 Alternately, you can also manually clone the repository by entering the following command at the command line in the directory you want to place the repository in.
     
     $ git clone https://github.com/KVCC-Java/cis-209-get-familiar-with-github-username.git

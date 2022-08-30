@@ -110,19 +110,19 @@ Here are the steps to submit your solution using NetBeans:
 
 You will be presented with a dialog to commit your changes to your sandbox. Make sure that you add a message for the commit and that your changes are shown.
 
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_commit.png "commit to git")
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/NetBeans_commit_dialog.png "commit to git")
 
 2. You have now saved your changes to the sandbox but to get them to the github server you need to perform a push operation.
 
 ![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/push.png "push to git")
 
-You will then see the following dialog:
+You will then see the following dialogs:
 
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_push_dialog.png "git push dialog")
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/NetBeans_push_step1.png "git push dialog")
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/NetBeans_push_step2.png "git push dialog")
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/NetBeans_push_step3.png "git push dialog")
 
-When you click on the "Push" button your changes will be uploaded to the server and you should see a status showing you that the push was successful.
-
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_push_successful.png "push successful")
+When you click on the "Finish" button your changes will be uploaded to the server.
 
 You can also do this mannualy by following these steps for a process of submitting your solutions:
 
@@ -153,7 +153,7 @@ You can also do this mannualy by following these steps for a process of submitti
     ```
 
 ## Verify the push worked!
-The last thing that we strongly recommend you do is to go to the your repository on GitHub to make sure that you can see your solutions.  
+The last thing that we **strongly** recommend you do is to go to the your repository on GitHub to make sure that you can see your solutions.  
    Just navigate to your repository and check that your latest commits are on GitHub.  
 
 Then go and eat some cinnamon rolls; you've finished the homework assignment.

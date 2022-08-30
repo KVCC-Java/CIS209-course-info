@@ -56,7 +56,7 @@ You will then clone the repository to your file system using the link in the gre
 
 Once you have copied the link you can use NetBeans IDE to clone the repository:
 
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_clone.png "clone menu")
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/NetBeans_git_clone.png "clone menu")
 
 NetBeans will present you with a clone dialog:
 

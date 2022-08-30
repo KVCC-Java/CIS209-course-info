@@ -32,6 +32,11 @@ There are numerous guides on using Git that are available. They range from being
 ## GitHub Account
 If you don't already have an account, sign up for one here: [https://github.com/join][join].
 
+## GitHub Authentication token
+You will need to create an authentication token in GitHub to use as the password in NetBeans. Follow these steps and save the token for later.
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/NetBeans_token.png "create token for NetBeans")
+
 ## Setting up Git
 
 Git should already be installed on the lab computers but you may want to install it on your own systems. See the following page for instructions to install it: [Set Up Git](https://help.github.com/articles/set-up-git/)
@@ -39,7 +44,7 @@ Git should already be installed on the lab computers but you may want to install
 ## Getting Newly Released Homework
 The instructor will post a URL in Canvas for each assignment. The first time you click on one of the URLs from GitHub Classroom you will be asked to authorize the classroom application, click the green "Authorize application" button. You will then be asked to accept the assignment. Clicking on the accept will add you to the KVCC-Java organization [https://github.com/KVCC-Java][KVCC-Java], create a private repository for the assignment and clone a readme file along with any starter code for the assignment if needed. You will receive emails as the steps are completed.
 
-If gitHub accept is not completing for a long time (like more than an hour or so), try the following:
+If gitHub accept is not completing for a long time (like more than a half hour or so), try the following:
 
 1. Go to the GitHub web-page, and click on the started import of the assignment in question.
 2. When prompted, choose CANCEL (not restart)
@@ -47,17 +52,30 @@ If gitHub accept is not completing for a long time (like more than an hour or so
 
 You will then clone the repository to your file system using the link in the green "Clone or download" button.
 
-Once you have copied the link you can use Intellij to clone the repository:
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/Clone_link_in_gitlab.png "clone link")
+
+Once you have copied the link you can use NetBeans IDE to clone the repository:
 
 ![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_clone.png "clone menu")
 
-Intellij will present you with a clone dialog:
+NetBeans will present you with a clone dialog:
 
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_clone_dialog.png "clone dialog")
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/Clone_repository.png "clone dialog")
 
-If this is the first time you've used git from Intellij, you can click on the login button to log in to git. You can then click on the test button to verify your connection.
+At this point you will want to fill out the following areas of the dialog:
+1. Copy the link from GitHub.
+2. Populate your GitHub username into the User field and copy the authorization token you created into the Password field.
+3. Specify the the local directory on your computer to place the files into.
 
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_clone_connection_test.png "clone connection test")
+Click on "Next >" and you will be shown a dialog to select the Remote Branches. 
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/clone_master_branch.png "Remote Branches")
+
+Accept the default to use the master branch and click on "Next >".
+
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/clone_destination_directory.png "clone menu")
+
+Since you filled in the destination directory on the first dialog, that will already be populated and you can accept the default for the rest of the items by clicking on "Finish".
 
 Alternately, you can also manually clone the repository by entering the following command at the command line in the directory you want to place the repository in.
     
@@ -65,20 +83,16 @@ Alternately, you can also manually clone the repository by entering the followin
        
 This will create a sandbox or copy of the repository. You can then do your assignment and add any supporting files to the directories.
 
-## Creating a Java project in Intellij
-Next you will want to create a Java project in the directory containing your sandbox. To do this click on the file | new project menu which will present a dialog:
+## Creating a Java project in NetBeans
+Next, NetBeans will prompt you to create a Java project in the directory containing your sandbox. 
 
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/new_java_project.png "create java project dialog")
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/clone_create_project.png "create project")
 
-Make sure you select Java on the left, then click "Next". You will then see the following dialog where you can click on "Next" again.
+Click on the "Create Project..." button which will present a dialog:
 
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/java_new_project_dialog_2.png "create java project dialog 2")
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/New_Java_Application.png "create java project dialog")
 
-The last dialog allows you to select the project location where you can browse to the directory containing your sandbox. The dialog also allows you to name the project.
-
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/java_new_project_select_directory.png "create java project directory selection")
-
-Click on "Finish" to create your Java project.
+Make sure you select "Java Application", then click "Next >". You will then have a new project to work in with your sandbox.
 
 ## Submitting Your Homework
 
@@ -88,25 +102,19 @@ The criteria for your homework being submitted on time is that your code must be
 
 Just because your code has been commited on your local machine, that doens't mean that it has been **submitted**; it needs to be on GitHub.
 
-Here are the steps to submit your solution using Intellij:
+Here are the steps to submit your solution using NetBeans:
 
-1. You can right click on one of your modified files to add the file to the sandbox:
+1. Click on the top line of your project and select the "Commit..." option on the "Team" menu:
 
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_add.png "add to git")
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/commit.png "add to git")
 
-You will be presented with a dialog to add files and you can also add other files at the same time by selecting the checkbox by the files.
-
-2. Once you have added the files you need to commit them to the sandbox. Right click on the file again to select the "commit" option.
+You will be presented with a dialog to commit your changes to your sandbox. Make sure that you add a message for the commit and that your changes are shown.
 
 ![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_commit.png "commit to git")
 
-Intellij will then show you the following dialog where you can add a commit message:
+2. You have now saved your changes to the sandbox but to get them to the github server you need to perform a push operation.
 
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_commit_dialog.png "git commit dialog")
-
-3. You have now saved your changes to the sandbox but to get them to the github server you need to perform a push operation.
-
-![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/git_push.png "push to git")
+![alt text](https://github.com/KVCC-Java/CIS209-course-info/blob/master/images/push.png "push to git")
 
 You will then see the following dialog:
 
